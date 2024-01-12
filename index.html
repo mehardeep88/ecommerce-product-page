@@ -23,7 +23,12 @@
         </div>
       </div>
       <div class="right-side">
-        <img src="images/icon-cart.svg" alt="cart" class="header-cart" />
+        <img
+          src="images/icon-cart.svg"
+          alt="cart"
+          class="header-cart"
+          onclick="toggle()"
+        />
         <img
           src="images/image-avatar.png"
           alt="profile"
@@ -31,6 +36,10 @@
         />
       </div>
     </nav>
+    <div class="hidden-content">
+      <h4>Cart</h4>
+      <p>Your Cart is empty</p>
+    </div>
     <main>
       <div class="images">
         <!--  <div class="big-img"> -->
@@ -41,10 +50,26 @@
         />
         <!-- </div> -->
         <div class="gallery">
-          <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail" />
-          <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail" />
-          <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail" />
-          <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail" />
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumbnail"
+            onclick="updThumbnail('images/image-product-1.jpg')"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="thumbnail"
+            onclick="updThumbnail('images/image-product-2.jpg')"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="thumbnail"
+            onclick="updThumbnail('images/image-product-3.jpg')"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="thumbnail"
+            onclick="updThumbnail('images/image-product-4.jpg')"
+          />
         </div>
       </div>
       <div class="information">
@@ -63,14 +88,24 @@
         <div class="buttons">
           <div id="counter">
             <button>
-              <img class="minus" src="images/icon-minus.svg" alt="minus" />
+              <img
+                class="minus"
+                src="images/icon-minus.svg"
+                alt="minus"
+                onclick="decCounter()"
+              />
             </button>
             <p>1</p>
             <button>
-              <img class="plus" src="images/icon-plus.svg" alt="plus" />
+              <img
+                class="plus"
+                src="images/icon-plus.svg"
+                alt="plus"
+                onclick="updCounter()"
+              />
             </button>
           </div>
-          <button id="cart">
+          <button id="cart" onclick="cartUpdate()">
             <img src="images/icons8-cart-50.png" alt="cart" />
             <p>Add to cart</p>
           </button>
