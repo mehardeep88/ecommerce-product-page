@@ -29,6 +29,7 @@
           class="header-cart"
           onclick="toggle()"
         />
+        <div id="cart-notification">0</div>
         <img
           src="images/image-avatar.png"
           alt="profile"
@@ -39,6 +40,19 @@
     <div class="hidden-content">
       <h4>Cart</h4>
       <p>Your Cart is empty</p>
+      <!-- <div class="wrapper">
+        <div class="first-col">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" />
+          <div class="text-price">
+            <p>Fall Limited Edition Sneakers</p>
+            <div class="pp">
+              <p>$125.00 x 3 $375.00</p>
+            </div>
+          </div>
+          <img class="del" src="images/icon-delete.svg" alt="" />
+        </div>
+        <button>Checkout</button>
+      </div> -->
     </div>
     <main>
       <div class="images">
@@ -105,7 +119,8 @@
               />
             </button>
           </div>
-          <button id="cart" onclick="cartUpdate()">
+          <button id="cart">
+            <!-- onclick="twoFunctions()" -->
             <img src="images/icons8-cart-50.png" alt="cart" />
             <p>Add to cart</p>
           </button>
