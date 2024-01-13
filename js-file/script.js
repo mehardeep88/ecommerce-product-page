@@ -107,6 +107,7 @@ function changeContent() {
 
     const checkoutButton = document.createElement('button');
     checkoutButton.textContent = 'Checkout';
+    checkoutButton.style.cursor = "pointer";
     checkoutButton.onclick = function () {
     alert('Thank You for Shopping with us');
     };
