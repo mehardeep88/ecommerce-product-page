@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce-page</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="styles/media-q.css" />
   </head>
   <body>
     <nav>
       <div class="left-side">
+        <box-icon name="menu-alt-left"></box-icon>
         <div class="links">
           <a href="#" id="sneakers">sneakers</a>
           <a href="#" class="link">Collections</a>
@@ -23,13 +21,15 @@
         </div>
       </div>
       <div class="right-side">
-        <img
-          src="images/icon-cart.svg"
-          alt="cart"
-          class="header-cart"
-          onclick="toggle()"
-        />
-        <div id="cart-notification">0</div>
+        <div id="cart-container">
+          <img
+            src="images/icon-cart.svg"
+            alt="cart"
+            class="header-cart"
+            onclick="toggle()"
+          />
+          <div id="cart-notification">0</div>
+        </div>
         <img
           src="images/image-avatar.png"
           alt="profile"
@@ -127,6 +127,7 @@
         </div>
       </div>
     </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js-file/script.js"></script>
   </body>
 </html>
