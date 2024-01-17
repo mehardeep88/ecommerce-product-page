@@ -279,13 +279,10 @@ main {
     position: relative;
     display: inline-block;
   }
-  .big-image {
+  /* .big-image {
     position: relative;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     padding: 10px;
-  }
+  } */
 
   .right-side .header-profile {
     width: 2em;
@@ -388,6 +385,7 @@ main {
     z-index: 99;
     border-radius: 50%;
     padding: 2vw;
+    cursor: pointer;
   }
   #next {
     background-color: rgba(255, 255, 255, 0.4);
@@ -399,6 +397,7 @@ main {
     z-index: 99;
     border-radius: 50%;
     padding: 2vw;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 800px) {

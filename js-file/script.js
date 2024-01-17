@@ -1,6 +1,6 @@
 /* let thumbnail = document.querySelector(".images .big-image"); */
 // To update the thumbnail
-
+ 
 let galleryImg = document.querySelectorAll(".gallery img");
 function updThumbnail(newSrc) {
     let thumbnail = document.querySelector(".images .big-image");
