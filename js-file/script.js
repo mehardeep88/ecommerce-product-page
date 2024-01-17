@@ -7,6 +7,23 @@ function updThumbnail(newSrc) {
     thumbnail.src = newSrc;
 }
 
+//FOR mobile view 
+let currId = 0;
+let prev = document.querySelector("#prev");
+let next = document.querySelector("#next");
+let thumbnail = document.querySelector(".images .big-image");
+prev.addEventListener("click", () => {
+    currId = (currId-1+galleryImg.length)%galleryImg.length;
+    updBigImg();
+});
+next.addEventListener("click", () => {
+    currId = (currId+1)%galleryImg.length;
+    updBigImg();
+});
+function updBigImg(newSrc) {
+    const selected = galleryImg[currId];
+    thumbnail.src = selected.src;
+}
 //To update the counter 
 
 let minus = document.querySelector("#counter .minus");

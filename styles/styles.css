@@ -52,6 +52,7 @@ nav .right-side {
   #next {
     position: absolute;
     top: 4%;
+    cursor: pointer;
   }
   #prev {
     display: block;
@@ -113,8 +114,7 @@ nav .right-side {
     left: 3em;
   }
 }
-@media screen and (max-width: 850px) {
-}
+
 @media screen and (max-width: 1000px) {
   .left-side {
     margin-left: 2vw;
@@ -204,22 +204,38 @@ main {
     margin: auto 0;
   } */
   .hidden-content {
-    width: 90%;
-    left: 5%;
+    width: 93% !important;
+    position: absolute !important;
+    left: 0 !important;
   }
 
   .hidden-content h4 {
-    font-size: 1.2rem; /* Adjust the font size as needed */
+    font-size: 1.2vw; /* Adjust the font size as needed */
   }
 
   .hidden-content p {
-    margin: 5%; /* Adjust the margin as needed */
-    font-size: 0.7rem; /* Adjust the font size as needed */
+    margin: 0; /* Adjust the margin as needed */
+    position: relative;
+    top: -2.5rem !important;
+    left: -8rem !important;
+    font-size: 3vw !important; /* Adjust the font size as needed */
+    white-space: nowrap;
   }
-
+  .first-col {
+    /* display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr !important; */
+    display: flex !important;
+    margin: 1vw 2vw;
+    justify-content: space-between !important;
+  }
+  .first-col .del {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
   .first-col img {
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
+    margin-left: 0 !important;
+    width: 4rem !important; /* Adjust the width as needed */
+    height: 4rem !important; /* Adjust the height as needed */
   }
 
   .first-col .text-price p {
@@ -227,6 +243,9 @@ main {
   }
 
   .wrapper button {
+    display: block;
+    margin: 0 auto !important;
+    height: 4rem;
     bottom: 1vw;
     font-size: 0.8rem; /* Adjust the font size as needed */
   }
@@ -342,6 +361,7 @@ main {
     display: flex;
     justify-content: space-between;
     height: 3em;
+    margin-bottom: 2rem;
     /* max-width: 800px; */
     box-sizing: border-box;
   }
@@ -452,6 +472,20 @@ main {
     border-radius: 50%;
     padding: 2vw;
   }
+  .hidden-content p {
+    margin: 0; /* Adjust the margin as needed */
+    position: relative;
+    top: -2.5rem !important;
+    left: -6rem !important;
+    font-size: 3vw !important; /* Adjust the font size as needed */
+    white-space: nowrap;
+  }
+  .hidden-content .del {
+    position: relative;
+    top: -5vw !important;
+    width: 5vw !important;
+    height: 5vw !important;
+  }
 }
 @media screen and (max-width: 400px) {
   #prev {
@@ -476,6 +510,18 @@ main {
     border-radius: 50%;
     padding: 2vw;
   }
+  .hidden-content p {
+    margin: 0; /* Adjust the margin as needed */
+    position: relative;
+    top: -2.5rem !important;
+    left: -4rem !important;
+    font-size: 3vw !important; /* Adjust the font size as needed */
+    white-space: nowrap;
+  }
+  .hidden-content .del {
+    width: 7vw !important;
+    height: 7vw !important;
+  }
 }
 @media screen and (max-width: 320px) {
   #prev {
@@ -499,6 +545,10 @@ main {
     z-index: 99;
     border-radius: 50%;
     padding: 2vw;
+  }
+  .hidden-content .del {
+    position: relative;
+    top: -2rem !important;
   }
 }
 .images .big-image {
