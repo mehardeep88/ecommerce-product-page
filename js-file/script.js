@@ -142,3 +142,35 @@ function resetCart() {
     message.textContent = 'Your Cart is empty';
     hiddenContent.appendChild(message);
 }
+
+//MENU open and close
+/* let menu = document.querySelector("box-icon");
+let close = document.querySelector("i");
+let navbar = document.querySelector("nav box-icon");
+
+menu.addEventListener("click", () => {
+    navbar.style.display = "flex";
+    close.style.display = "block";
+});
+
+close.addEventListener("click", () => {
+    navbar.style.display = "none";
+    //menu.style.display = "none";
+}); */
+document.addEventListener('DOMContentLoaded', function() {
+    let menuIcon = document.getElementById("menuIcon");
+    let closeIcon = document.getElementById("closeIcon");
+    let navbar = document.querySelector("nav .left-side .links");
+
+    menuIcon.addEventListener("click", () => {
+      navbar.style.display = "flex";
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    });
+
+    closeIcon.addEventListener("click", () => {
+      navbar.style.display = "none";
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    });
+  });

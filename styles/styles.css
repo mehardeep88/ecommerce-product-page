@@ -78,7 +78,6 @@ nav .right-side {
 #cart-container {
   position: relative;
   display: inline-block;
-  top: 1em;
 }
 #cart-notification {
   position: absolute;
@@ -105,7 +104,6 @@ nav .right-side {
   #cart-container {
     position: relative;
     display: inline-block;
-    top: 1em;
   }
   #cart-notification {
     width: 0.5vw;
@@ -137,6 +135,7 @@ nav .right-side {
   text-decoration: none;
   color: #000000;
   font-size: 2.7vw;
+  margin-right: 12vh;
 }
 .left-side .links {
   display: flex;
@@ -254,6 +253,9 @@ main {
 #next {
   display: none;
 }
+i {
+  display: none;
+}
 @media screen and (max-width: 900px) {
   * {
     box-sizing: border-box;
@@ -265,15 +267,54 @@ main {
   }
   nav {
     display: flex;
+    /* background-color: #fff; */
+    /* height: 100vh; */
   }
   nav box-icon {
     display: block;
-    margin-right: 2vw;
+    cursor: pointer;
   }
 
-  nav .left-side .links a:not(#sneakers) {
+  nav .left-side .links {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    height: 100vh;
+    width: 50%;
+    color: #000000;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+    /* display: none; */
+  }
+  nav .left-side .links .link {
+    color: #000000;
+    z-index: 9999;
+    font-weight: 900;
+    margin-left: 3vw;
+  }
+  nav .left-side .links .link:first-child {
+    margin-top: 8vw;
+  }
+  i {
+    display: none;
+    z-index: 10000;
+    position: absolute;
+    left: 3%;
+    cursor: pointer;
+  }
+  .hidden {
     display: none;
   }
+
+  .visible {
+    display: block;
+  }
+
   .right-side .header-cart {
     width: 1.7em;
     position: relative;
